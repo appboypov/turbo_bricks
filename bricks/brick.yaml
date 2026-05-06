@@ -1,0 +1,5 @@
+name: bricks
+description: One brick init to init them all.
+version: 0.1.0+1
+environment:
+  mason: ^0.1.0

@@ -1,12 +1,9 @@
 name: router
-description: An ultra wide turbo router brick.
+description: A turbo router brick.
 version: 0.1.0+1
 environment:
   mason: ^0.1.0
 vars:
   featureName:
     type: string
-    description: The name of the feature (e.g. auth -> lib/features/auth).
-  packageName:
-    type: string
-    description: The package name (e.g. ultra_wide_turbo_bricks -> import 'package:ultra_wide_turbo_bricks..)
+    description: The name of the feature (e.g. auth -> lib/auth/routers/).

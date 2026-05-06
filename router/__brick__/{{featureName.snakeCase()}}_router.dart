@@ -1,51 +1,35 @@
-import 'package:flutter/foundation.dart';
 import 'package:get_it/get_it.dart';
-import 'package:go_router/go_router.dart';
-import 'package:{{packageName.snakeCase()}}/core/abstracts/base_navigation.dart';
-import 'package:{{packageName.snakeCase()}}/core/enums/navigation_tab.dart';
+import 'package:turbo_modules/routing/abstracts/t_route.dart';
+import 'package:turbo_modules/routing/abstracts/t_router.dart';
+import 'package:turbo_modules/routing/services/app_routing_service.dart';
+import 'package:turbo_modules/routing/services/navigation_tab_service.dart';
 
-class {{featureName.pascalCase()}}Router extends BaseNavigation {
+class {{featureName.pascalCase()}}Router extends TRouter {
+  {{featureName.pascalCase()}}Router({
+    required super.initialRoute,
+    required super.appRoutingService,
+    required super.navigationTabService,
+  });
+
   // 📍 LOCATOR ------------------------------------------------------------------------------- \\
 
+  static {{featureName.pascalCase()}}Router Function() get lazyLocate => () => GetIt.I.get();
   static {{featureName.pascalCase()}}Router get locate => GetIt.I.get();
-  static void registerFactory() => GetIt.I.registerFactory({{featureName.pascalCase()}}Router.new);
+  static void registerFactory({required TRoute initialRoute}) => GetIt.I.registerFactory(
+    () => {{featureName.pascalCase()}}Router(
+      initialRoute: initialRoute,
+      appRoutingService: AppRoutingService.locate,
+      navigationTabService: NavigationTabService.locate,
+    ),
+  );
 
   // 🧩 DEPENDENCIES -------------------------------------------------------------------------- \\
   // 🎬 INIT & DISPOSE ------------------------------------------------------------------------ \\
   // 👂 LISTENERS ----------------------------------------------------------------------------- \\
   // ⚡️ OVERRIDES ----------------------------------------------------------------------------- \\
-
-  @override
-  NavigationTab get navigationTab => ;
-
-  @override
-  String get root => ;
-
   // 🎩 STATE --------------------------------------------------------------------------------- \\
   // 🛠 UTIL ---------------------------------------------------------------------------------- \\
   // 🧲 FETCHERS ------------------------------------------------------------------------------ \\
   // 🏗️ HELPERS ------------------------------------------------------------------------------- \\
   // 🪄 MUTATORS ------------------------------------------------------------------------------ \\
-
-  void go{{featureName.pascalCase()}}View({
-    StatefulNavigationShell? statefulNavigationShell,
-    bool shouldLaunchInboxPopup = false,
-  }) {
-    if (statefulNavigationShell != null) {
-      goBranch(
-        statefulNavigationShell: statefulNavigationShell,
-      );
-      if (kIsWeb) {
-        // bug
-        goBranch(
-          statefulNavigationShell: statefulNavigationShell,
-        );
-      }
-    } else {
-      go(
-        location: root,
-        extra: const [],
-      );
-    }
-  }
 }

@@ -1,9 +1,9 @@
 name: service
-description: An ultra wide turbo service brick.
+description: A turbo service brick.
 version: 0.1.0+1
 environment:
   mason: ^0.1.0
 vars:
   serviceName:
     type: string
-    description: Name of the Service (dialog -> DialogService)
+    description: Name of the Service (dialog -> DialogService).

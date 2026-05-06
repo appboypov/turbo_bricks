@@ -1,0 +1,12 @@
+name: view-model-widget
+description: A turbo view-model-widget brick.
+version: 0.1.0+1
+environment:
+  mason: ^0.1.0
+vars:
+  widgetName:
+    type: string
+    description: The name of the widget (e.g. UserCard -> UserCard).
+  parentModel:
+    type: string
+    description: The name of the parent model (e.g. Home -> HomeModel).

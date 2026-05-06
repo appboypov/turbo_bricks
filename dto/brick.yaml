@@ -1,0 +1,9 @@
+name: dto
+description: A turbo dto brick.
+version: 0.1.0+1
+environment:
+  mason: ^0.1.0
+vars:
+  dtoName:
+    type: string
+    description: Name of the DTO without "Dto" suffix (e.g. user -> UserDto).

@@ -1,31 +1,19 @@
 # run this command from the root/scripts directory
-cd ../lib/features/ || exit
+cd ../lib/ || exit
 echo "Name of the feature?"
 read -r feature
 mkdir "$feature"
 cd "$feature" || exit
 mkdir "abstracts"
-mkdir "adapters"
-mkdir "analytics"
-mkdir "annotations"
 mkdir "apis"
-mkdir "config"
 mkdir "constants"
-mkdir "converters"
 mkdir "dtos"
 mkdir "enums"
-mkdir "exceptions"
 mkdir "extensions"
 mkdir "forms"
 mkdir "globals"
+mkdir "mixins"
 mkdir "models"
-mkdir "records"
-mkdir "requests"
-mkdir "responses"
-mkdir "routing"
 mkdir "services"
-mkdir "strings"
-mkdir "typedefs"
-mkdir "utils"
 mkdir "views"
 mkdir "widgets"

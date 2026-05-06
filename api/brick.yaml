@@ -1,12 +1,9 @@
 name: api
-description: An ultra wide turbo api brick.
+description: A turbo api brick.
 version: 0.1.0+1
 environment:
   mason: ^0.1.0
 vars:
-  packageName:
-    type: string
-    description: The package name (e.g. ultra_wide_turbo_bricks -> import 'package:ultra_wide_turbo_bricks..)
   projectKey:
     type: string
-    description: The project key (e.g. turbo -> TurboScaffold).
+    description: The project key (e.g. turbo -> TurboApi).

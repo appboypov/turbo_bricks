@@ -10,6 +10,7 @@ void main() async {
     'package_name': '{{packageName.snakeCase()}}',
     'path-name': '{{path.paramCase()}}',
     'Hello World': 'Hello Mars',
+
     // Add more replacements as needed
   };
 

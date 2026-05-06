@@ -1,0 +1,10 @@
+name: {{brickName.paramCase()}}
+description: One pew pew {{brickName.paramCase()}} brick.
+version: 0.1.0+1
+environment:
+  mason: ^0.1.0
+vars:
+  packageName:
+    type: string
+    description: The package name (e.g. turbo_bricks -> import 'package:turbo_bricks..)
+    prompt: What is the package name?

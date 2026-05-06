@@ -1,34 +1,10 @@
 name: {{brickName.paramCase()}}
-description: An ultra wide turbo {{brickName.paramCase()}} brick.
+description: A turbo {{brickName.paramCase()}} brick.
 version: 0.1.0+1
 environment:
   mason: ^0.1.0
 vars:
-  collectionName:
-    type: string
-    description: Name of the collection (e.g. properties -> FirestoreCollection.properties, PropertiesService, PropertiesApi) (plural)
-    prompt: What is the name of the collection?
-  collectionObjectName:
-    type: string
-    description: The singular object name of the collection (e.g. properties -> property)
-    prompt: What should we call a single object in this collection?
-  featureName:
-    type: string
-    description: The name of the feature (e.g. auth -> lib/features/auth).
-    prompt: What is the name of the feature?
   packageName:
     type: string
-    description: The package name (e.g. ultra_wide_turbo_bricks -> import 'package:ultra_wide_turbo_bricks..)
+    description: The package name (e.g. turbo_bricks -> import 'package:turbo_bricks..)
     prompt: What is the package name?
-  projectKey:
-    type: string
-    description: The project key (e.g. turbo -> TurboScaffold).
-    prompt: What is the project key?
-  serviceName:
-    type: string
-    description: Name of the Service (dialog -> DialogService)
-    prompt: What is the name of the service? (without 'Service' suffix)
-  viewName:
-    type: string
-    description: The name of the view (e.g. turbo -> TurboView).
-    prompt: What is the name of the view? (without 'View' suffix)

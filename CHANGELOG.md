@@ -17,7 +17,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [0.0.1] - 2024-01-24
 
 ### ✨ Features:
-- Initial release of Ultra Wide Turbo Bricks
+- Initial release of Turbo Bricks
 - Collection service brick for Firestore collections with GetIt integration
 - Document service brick for Firestore documents with GetIt integration
 - API layer brick for Firestore interactions

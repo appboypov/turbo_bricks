@@ -1,4 +1,4 @@
-# Ultra Wide Turbo Bricks 🧱
+# Turbo Bricks 🧱
 
 [![Powered by Mason](https://img.shields.io/endpoint?url=https%3A%2F%2Ftinyurl.com%2Fmason-badge)](https://github.com/felangel/mason)
 
@@ -27,7 +27,7 @@ dart pub global activate mason_cli
 mason add <brick_name> --path path/to/brick
 
 # Or add from git repository
-mason add <brick_name> --git-url https://github.com/your-username/ultra_wide_turbo_bricks --git-path <brick_name>
+mason add <brick_name> --git-url https://github.com/your-username/turbo_bricks --git-path <brick_name>
 ```
 
 ## Usage Examples

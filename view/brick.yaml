@@ -1,15 +1,12 @@
 name: view
-description: An ultra wide turbo view brick.
+description: A turbo view brick.
 version: 0.1.0+1
 environment:
   mason: ^0.1.0
 vars:
-  projectKey:
+  featureName:
     type: string
-    description: The project key (e.g. Turbo -> TurboScaffold).
+    description: The name of the feature (e.g. auth -> lib/auth/views/).
   viewName:
     type: string
     description: The name of the view (e.g. Turbo -> TurboView).
-  packageName:
-    type: string
-    description: The package name (e.g. ultra_wide_turbo_bricks -> import 'package:ultra_wide_turbo_bricks..)

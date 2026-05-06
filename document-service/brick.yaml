@@ -1,18 +1,9 @@
 name: document-service
-description: An ultra wide turbo document-service brick.
+description: A turbo document-service brick.
 version: 0.1.0+1
 environment:
   mason: ^0.1.0
 vars:
-  projectKey:
-    type: string
-    description: The project key (e.g. Turbo -> TurboScaffold).
-  featureName:
-    type: string
-    description: Name of the feature (e.g. auth -> features/auth/*)
-  collectionName:
-    type: string
-    description: Name of the collection (e.g. users -> FirestoreCollection.users) (plural)
   collectionObjectName:
     type: string
-    description: Name of the DTO without 'Dto' (user -> UserDto) (singular)
+    description: Name of the DTO without 'Dto' (user -> UserDto) (singular).

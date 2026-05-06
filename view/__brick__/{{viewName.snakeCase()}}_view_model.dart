@@ -1,40 +1,35 @@
 import 'package:get_it/get_it.dart';
-import 'package:loglytics/loglytics.dart';
-import 'package:{{packageName.snakeCase()}}/core/models/origin_arguments.dart';
-import 'package:{{packageName.snakeCase()}}/features/fea/views/{{viewName.snakeCase()}}_arguments.dart';
-import 'package:{{packageName.snakeCase()}}/features/{{featureName.snakeCase()}}/views/{{viewName.snakeCase()}}_origin.dart';
-import 'package:veto/data/models/base_view_model.dart';
+import 'package:turbo_mvvm/turbo_mvvm.dart';
+import 'package:turbolytics/turbolytics.dart';
 
-class {{viewName.pascalCase()}}ViewModel extends BaseViewModel<OriginArguments<{{viewName.pascalCase()}}Origin, {{viewName.pascalCase()}}Arguments>> with Loglytics {
-  {{viewName.pascalCase()}}ViewModel._();
-  
+import '{{viewName.snakeCase()}}_arguments.dart';
+
+class {{viewName.pascalCase()}}ViewModel extends TBaseViewModel<{{viewName.pascalCase()}}Arguments> with Turbolytics {
+  {{viewName.pascalCase()}}ViewModel();
+
   // 📍 LOCATOR ------------------------------------------------------------------------------- \\
 
   static {{viewName.pascalCase()}}ViewModel get locate => GetIt.I.get();
-  static void registerFactory() => GetIt.I.registerFactory({{viewName.pascalCase()}}ViewModel._);
-  
+  static void registerFactory() => GetIt.I.registerFactory({{viewName.pascalCase()}}ViewModel.new);
+
   // 🧩 DEPENDENCIES -------------------------------------------------------------------------- \\
   // 🎬 INIT & DISPOSE ------------------------------------------------------------------------ \\
 
   @override
-  Future<void> initialise() async {
-    super.initialise();
+  Future<void> initialise({bool doSetInitialised = true}) async {
+    await super.initialise(doSetInitialised: doSetInitialised);
   }
 
   @override
   Future<void> dispose() async {
-    super.dispose();
+    await super.dispose();
   }
-  
+
   // 👂 LISTENERS ----------------------------------------------------------------------------- \\
   // ⚡️ OVERRIDES ----------------------------------------------------------------------------- \\
   // 🎩 STATE --------------------------------------------------------------------------------- \\
   // 🛠 UTIL ---------------------------------------------------------------------------------- \\
   // 🧲 FETCHERS ------------------------------------------------------------------------------ \\
-  
-  {{viewName.pascalCase()}}Origin get origin => arguments.origin;
-  {{viewName.pascalCase()}}Arguments get args => arguments.data;
-  
-  // 🏗 HELPERS ------------------------------------------------------------------------------- \\
+  // 🏗️ HELPERS ------------------------------------------------------------------------------- \\
   // 🪄 MUTATORS ------------------------------------------------------------------------------ \\
 }
