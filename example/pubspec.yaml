@@ -16,7 +16,7 @@ dependencies:
   go_router: ^17.2.2
   json_annotation: ^4.11.0
   turbo_modules:
-    path: ../../../Packages/turbo_modules
+    path: ../../turbo_modules
   turbo_firestore_api:
     path: ../../../Packages/turbo_packages/turbo_firestore_api
   turbo_mvvm:
