@@ -16,31 +16,31 @@ dependencies:
   go_router: ^17.2.2
   json_annotation: ^4.11.0
   turbo_modules:
-    path: ../../turbo_modules
+    path: ../../../Packages/turbo_modules
   turbo_firestore_api:
-    path: ../../turbo_packages/turbo_firestore_api
+    path: ../../../Packages/turbo_packages/turbo_firestore_api
   turbo_mvvm:
-    path: ../../turbo_packages/turbo_mvvm
+    path: ../../../Packages/turbo_packages/turbo_mvvm
   turbo_serializable:
-    path: ../../turbo_packages/turbo_serializable
+    path: ../../../Packages/turbo_packages/turbo_serializable
   turbolytics:
-    path: ../../turbo_packages/turbolytics
+    path: ../../../Packages/turbo_packages/turbolytics
 
 dependency_overrides:
   turbo_firestore_api:
-    path: ../../turbo_packages/turbo_firestore_api
+    path: ../../../Packages/turbo_packages/turbo_firestore_api
   turbo_forms:
-    path: ../../turbo_packages/turbo_forms
+    path: ../../../Packages/turbo_packages/turbo_forms
   turbo_mvvm:
-    path: ../../turbo_packages/turbo_mvvm
+    path: ../../../Packages/turbo_packages/turbo_mvvm
   turbo_notifiers:
-    path: ../../turbo_packages/turbo_notifiers
+    path: ../../../Packages/turbo_packages/turbo_notifiers
   turbo_response:
-    path: ../../turbo_packages/turbo_response
+    path: ../../../Packages/turbo_packages/turbo_response
   turbo_serializable:
-    path: ../../turbo_packages/turbo_serializable
+    path: ../../../Packages/turbo_packages/turbo_serializable
   turbolytics:
-    path: ../../turbo_packages/turbolytics
+    path: ../../../Packages/turbo_packages/turbolytics
 
 dev_dependencies:
   flutter_test:
