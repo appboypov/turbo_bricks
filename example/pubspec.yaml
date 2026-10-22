@@ -16,31 +16,66 @@ dependencies:
   go_router: ^17.2.2
   json_annotation: ^4.11.0
   turbo_modules:
-    path: ../../turbo_modules
+    git:
+      url: git@github.com:appboypov/turbo_modules.git
+      ref: main
   turbo_firestore_api:
-    path: ../../../Packages/turbo_packages/turbo_firestore_api
+    git:
+      url: git@github.com:appboypov/turbo_packages.git
+      ref: main
+      path: turbo_firestore_api
   turbo_mvvm:
-    path: ../../../Packages/turbo_packages/turbo_mvvm
+    git:
+      url: git@github.com:appboypov/turbo_packages.git
+      ref: main
+      path: turbo_mvvm
   turbo_serializable:
-    path: ../../../Packages/turbo_packages/turbo_serializable
+    git:
+      url: git@github.com:appboypov/turbo_packages.git
+      ref: main
+      path: turbo_serializable
   turbolytics:
-    path: ../../../Packages/turbo_packages/turbolytics
+    git:
+      url: git@github.com:appboypov/turbo_packages.git
+      ref: main
+      path: turbolytics
 
 dependency_overrides:
   turbo_firestore_api:
-    path: ../../../Packages/turbo_packages/turbo_firestore_api
+    git:
+      url: git@github.com:appboypov/turbo_packages.git
+      ref: main
+      path: turbo_firestore_api
   turbo_forms:
-    path: ../../../Packages/turbo_packages/turbo_forms
+    git:
+      url: git@github.com:appboypov/turbo_packages.git
+      ref: main
+      path: turbo_forms
   turbo_mvvm:
-    path: ../../../Packages/turbo_packages/turbo_mvvm
+    git:
+      url: git@github.com:appboypov/turbo_packages.git
+      ref: main
+      path: turbo_mvvm
   turbo_notifiers:
-    path: ../../../Packages/turbo_packages/turbo_notifiers
+    git:
+      url: git@github.com:appboypov/turbo_packages.git
+      ref: main
+      path: turbo_notifiers
   turbo_response:
-    path: ../../../Packages/turbo_packages/turbo_response
+    git:
+      url: git@github.com:appboypov/turbo_packages.git
+      ref: main
+      path: turbo_response
   turbo_serializable:
-    path: ../../../Packages/turbo_packages/turbo_serializable
+    git:
+      url: git@github.com:appboypov/turbo_packages.git
+      ref: main
+      path: turbo_serializable
   turbolytics:
-    path: ../../../Packages/turbo_packages/turbolytics
+    git:
+      url: git@github.com:appboypov/turbo_packages.git
+      ref: main
+      path: turbolytics
 
 dev_dependencies:
   flutter_test:
